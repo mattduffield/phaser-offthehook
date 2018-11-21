@@ -1,10 +1,17 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
   <head>
-    <title>Empty Web</title>
+    <title>Interphase #1 - Off The Hook</title>
     <meta charset="utf-8">
+    <link href="lib/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.47/system.js"></script>
   </head>
   <body>
-    Hello World!
+    <div id="game"></div>
+    <script type="text/javascript">
+      System.import('https://cdnjs.cloudflare.com/ajax/libs/phaser/2.6.2/phaser.min.js').then(function(){
+        System.import('game.js');
+      });
+    </script>
   </body>
-</html>
+</head>
